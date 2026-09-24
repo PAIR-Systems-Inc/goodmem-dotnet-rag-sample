@@ -1,0 +1,33 @@
+@host = http://localhost:5077
+
+### Provision models, one space, and the seed documents
+POST {{host}}/api/setup
+
+### Baseline retrieval
+POST {{host}}/api/chat
+Content-Type: application/json
+
+{
+  "sessionId": "demo-user",
+  "message": "What is the refund policy for annual plans?",
+  "useReranker": false
+}
+
+### Compare baseline and reranked retrieval against identical session history
+POST {{host}}/api/compare
+Content-Type: application/json
+
+{
+  "sessionId": "demo-user",
+  "message": "What is the refund policy for annual plans?"
+}
+
+### Demonstrate memory across API restarts
+POST {{host}}/api/chat
+Content-Type: application/json
+
+{
+  "sessionId": "demo-user",
+  "message": "What did I ask you previously?",
+  "useReranker": true
+}

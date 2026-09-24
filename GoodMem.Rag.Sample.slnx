@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/GoodMem.Rag.Api/GoodMem.Rag.Api.csproj" />
+  <Project Path="tests/GoodMem.Rag.Api.Tests/GoodMem.Rag.Api.Tests.csproj" />
+</Solution>

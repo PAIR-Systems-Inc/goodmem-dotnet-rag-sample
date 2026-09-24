@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "PairSystems.Goodmem.Client": {
+        "type": "Direct",
+        "requested": "[2.0.2, )",
+        "resolved": "2.0.2",
+        "contentHash": "Nf+tYMeEqZPGPwRLdmWI9M5Avs4WKwTEqKR5nRrCz3UtDRoMU+lWCdy6TFudq3GMb+YBvm8bz7JaTmOb3wyPAw=="
+      }
+    }
+  }
+}
